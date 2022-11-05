@@ -1,0 +1,244 @@
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 100px;
+    background-color: rgb(245, 245, 245);
+}
+
+.thumbnail {
+    width: 100%;
+    object-fit: contain;
+    object-position: right;
+}
+
+.search-bar {
+    height: 34px;
+    padding-left: 10px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    flex: 1;
+    box-shadow: inset 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder {
+    font-family: Arial, Roboto;
+    font-size: 16px;
+}
+
+.video-title {
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.video-preview {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.video-info,
+.channel-picture {
+    margin-top: 5px;
+}
+
+
+.video-author,
+.video-stats {
+    margin: 5px 5px;
+    color: rgb(60, 60, 60);
+    font-size: 12px;
+}
+
+.profile-picture {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.video-info {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(199, 199, 199);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.search-button {
+    height: 38px;
+    width: 66px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: -1;
+}
+
+.search-button,
+.voice-search-button,
+.upload-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.voice-search-button {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-icon {
+    height: 24px;
+    margin-top: 4px;
+}
+
+.upload {
+    height: 24px;
+}
+
+.youtube-apps {
+    height: 24px;
+}
+
+.notifications {
+    height: 24px;
+}
+
+.user {
+    height: 32px;
+    border-radius: 16px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+}
+
+.sidebar-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 24px;
+    width: 24px;
+}
+
+.sidebar-button:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.sidebar-button img {
+    height: 24px;
+}
+
+.sidebar-words {
+    font-family: Arial, Roboto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-container .tooltip {
+    position: absolute;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 3px;
+    font-family: Arial, Roboto;
+    font-size: 12px;
+    opacity: 0;
+    bottom: -30px;
+    transition: 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-container:hover .tooltip {
+    opacity: 0.8;
+}
+
+@media(max-width:1100px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
